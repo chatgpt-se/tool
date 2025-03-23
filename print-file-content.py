@@ -110,6 +110,7 @@ def print_file_contents(folder_path, ignore_patterns=None):
                 with open(filepath, 'r', encoding='utf-8') as f:
                     content = f.read()
                     print(f"{filepath}:\n{content}")
+                    print()
             except Exception as e:
                 print(f"Error reading {filepath}: {e}")
 
